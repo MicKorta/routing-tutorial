@@ -1,0 +1,6 @@
+<div>DataSourceComponent</div>
+<br /><br />
+<div class="flex-row">
+  <div><a [routerLink]="['/data-destination']" [queryParams]="{ firstname: 'Bruce', lastname: 'Wayne' }">DataDestination</a></div>
+  <div style="margin-left: 50px"><button (click)="navigatePassingData()">DataDestination</button></div>
+</div>

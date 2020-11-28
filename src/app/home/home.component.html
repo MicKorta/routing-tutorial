@@ -1,0 +1,35 @@
+<!--
+  /**
+   * Home component serves as the start page of the application
+   *
+   * @author  micha@codaa.de
+   * @web     www.codaa.de
+   * @version 1.0
+   * @since   2020-11-28
+   */
+-->
+<div>HomeComponent</div>
+
+<br /><br />
+
+<div class="flex-column">
+  <div class="flex-row">
+    <div><a routerLink="/data-source">DataSource</a></div>
+    <div style="margin-left: 65px"><button (click)="navigate('/data-source')">DataSource</button></div>
+  </div>
+
+  <br /><br />
+
+  <div class="flex-row">
+    <div><a routerLink="/object-source">ObjectSource</a></div>
+    <div style="margin-left: 50px"><button (click)="navigate('/object-source')">ObjectSource</button></div>
+  </div>
+
+  <br /><br />
+
+  <div class="flex-row">
+    <div><a routerLink="/external-link">ExternalLink</a></div>
+    <div style="margin-left: 50px"><button (click)="navigate('/external-link')">ExternalLink</button></div>
+  </div>
+
+</div>

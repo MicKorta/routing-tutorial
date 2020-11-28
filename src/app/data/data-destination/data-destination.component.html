@@ -1,0 +1,17 @@
+<div>DataDestinationComponent</div>
+  <br /><br />
+  <div style="text-align: center">
+    <div *ngIf="params.length === 0">
+      <div>
+        Es wurden keine Daten übergeben.
+      </div>
+    </div>
+
+    <div *ngIf="params.length > 0">
+      <div style="padding: 20px">
+        <div *ngFor="let param of params">
+          {{ param.name }} = {{ param.value }}
+        </div>
+      </div>
+    </div>
+  </div>
